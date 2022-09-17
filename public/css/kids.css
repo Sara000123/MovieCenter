@@ -1,38 +1,12 @@
 body {
     background-color: rgba(0, 0, 0, 0.94);
+    margin: 0;
 }
-.Head-Text h1 {
-    position: relative;
-    top: 80px;
-    left: 40%;
-    color: #3dbde3;
-    font-size: 40px;
-    font-family: Arial, serif;
+.container{
 }
 
-ul {
-    list-style-type: none;
-    margin: -100px;
-    padding: 0px;
-    overflow: hidden;
-    background-color: #3dbde3;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: start;
-    padding: 12px 50px;
-    text-decoration: none;
-    font-family: Arial, serif;
-}
-
-li a:hover {
-    background-color: #111;
+* {
+    box-sizing: border-box;
 }
 
 .caption{
@@ -58,7 +32,68 @@ p{
 .moviePics{
     margin-top: 15%;
 }
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 100%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-@media all and (max-width: 500px){
-
+.container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
 }
+/* For tablets: */
+@media (min-width: 640px) {
+    .container
+}
+
+/*Mobile*/
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+
+    }
+}
+    .Head-Text h1 {
+        position: relative;
+        top: 80px;
+        left: 40%;
+        color: #3dbde3;
+        font-size: 40px;
+        font-family: Arial, serif;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: -100px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: #3dbde3;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: start;
+        padding: 12px 50px;
+        text-decoration: none;
+        font-family: Arial, serif;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
