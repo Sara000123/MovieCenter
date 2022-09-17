@@ -6,8 +6,10 @@ body {
 .Head-Text h1{
     position: relative ;
     top: 80px;
-    left: 650px;
+    left: 45%;
     color: #3dbde3;
+    font-size: 40px;
+    font-family: Arial;
 }
 
 .button-typ1{
@@ -21,6 +23,7 @@ body {
     position: relative;
     top: 200px;
     left: 330px;
+    font-family: Helvetica, serif;
 
 }
 
@@ -42,6 +45,7 @@ li a {
     text-align: start;
     padding: 12px 50px;
     text-decoration: none;
+    font-family: Arial, serif;
 }
 
 li a:hover {
