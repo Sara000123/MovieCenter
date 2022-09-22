@@ -2,12 +2,7 @@ body {
     background-color: rgba(0, 0, 0, 0.94);
     margin: 0;
 }
-.container{
-}
 
-* {
-    box-sizing: border-box;
-}
 
 .caption{
     font-size: 20px;
@@ -16,71 +11,52 @@ body {
     line-height: 20%;
 
 }
-p{
-    margin-top: 3%;
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.Description-text{
-    position: absolute;
-    top: 25%;
-    left: 300px;
+
+.flexbox-moviePics p{
     color: #3dbde3;
+    line-height: 100%;
+    font-size: 20px;
+    color: #ffffff;
     font-size: 90%;
     font-family: Helvetica, serif;
     text-align: justify;
-}
-.moviePics{
-    margin-top: 15%;
-}
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 100%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+    margin-top: 5%;
+    margin-bottom: 10%;
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-}
-/* For tablets: */
-@media (min-width: 640px) {
-    .container
 }
 
-/*Mobile*/
-@media only screen and (max-width: 768px) {
-    [class*="col-"] {
-        width: 100%;
-
-    }
+.flexbox-moviePics{
+    margin-top: 10%;
+    margin-left: 15%;
+    text-align-last: auto;
+    margin-bottom: 20%;
+    line-height: 180%;
 }
-    .Head-Text h1 {
-        position: relative;
-        top: 80px;
-        left: 40%;
+    .flexbox-title {
+        position: center;
+        text-align: center;
         color: #3dbde3;
         font-size: 40px;
         font-family: Arial, serif;
     }
 
-    ul {
+
+    .navbar {
         list-style-type: none;
-        margin: -100px;
+        margin: 0px;
         padding: 0px;
         overflow: hidden;
         background-color: #3dbde3;
     }
 
-    li {
+     li {
         float: left;
     }
 
@@ -93,7 +69,14 @@ p{
         font-family: Arial, serif;
     }
 
-    li a:hover {
+     li a:hover {
         background-color: #111;
     }
+
+    @media only screen and (max-width: 600px) {
+        .flex-container {
+            flex-direction: column;
+        }
+    }
+
 
